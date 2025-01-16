@@ -126,7 +126,6 @@ def get_min_support_range(dataset):
 def main():
     analyzer = SequenceAnalyzer()
     
-    # Original function equivalents:
     def showMinSupImpactFIFA():
         analyzer.analyze_min_support("FIFA", get_min_support_range("FIFA"))
 
@@ -139,16 +138,16 @@ def main():
     def showLengthImpactFIFA():
         analyzer.analyze_sequence_length("FIFA", 0.4)
 
-    def showMinSupImpactFIFAspark():
+    def showMinSupImpactFIFASpark():
         analyzer.analyze_min_support("FIFA", get_min_support_range("FIFA"), use_spark=True)
 
-    def showMinSupImpactRetailspark():
+    def showMinSupImpactRetailSpark():
         analyzer.analyze_min_support("OnlineRetail", get_min_support_range("OnlineRetail"), use_spark=True)
 
-    def showLengthImpactRetailspark():
+    def showLengthImpactRetailSpark():
         analyzer.analyze_sequence_length("OnlineRetail", 0.25, use_spark=True)
 
-    def showLengthImpactFIFAspark():
+    def showLengthImpactFIFASpark():
         analyzer.analyze_sequence_length("FIFA", 0.4, use_spark=True)
 
     # Uncomment the function you want to run:
