@@ -1,5 +1,5 @@
 from time import perf_counter
-from prefixspan import PrefixSpan
+from PrefixSpan.prefixspan import PrefixSpan
 import matplotlib.pyplot as plt
 import random
 from pyspark.ml.fpm import PrefixSpan as PS
@@ -150,7 +150,6 @@ def main():
     def showLengthImpactFIFASpark():
         analyzer.analyze_sequence_length("FIFA", 0.4, use_spark=True)
 
-    # Uncomment the function you want to run:
     showMinSupImpactFIFA()
     # showMinSupImpactRetail()
     # showLengthImpactRetail()
