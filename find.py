@@ -24,11 +24,18 @@ class Config:
         )
 
 class DataLoader:
-    SMALL_DATABASE = [
+    '''SMALL_DATABASE = [
         [list("ab"), list("c"), list("a")],
         [list("ab"), list("b"), list("c")],
         [list("b"), list("c"), list("d")],
         [list("b"), list("ab"), list("c")],
+    ]'''
+
+    SMALL_DATABASE = [
+        [list("a"), list("abc"), list("ac"), list("d"), list("cf")],
+        [list("ad"), list("c"), list("bc"), list("ae")],
+        [list("ef"), list("ab"), list("df"), list("c"), list("b")],
+        [list("e"), list("g"), list("af"), list("c"), list("b"), list("b")],
     ]
     
     @staticmethod
